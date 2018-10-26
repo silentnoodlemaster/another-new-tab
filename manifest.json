@@ -1,9 +1,13 @@
 
 {
-    "manifest_version": 2,
-    "name": "Another New Tab",
-    "version": "0.1",
-    "chrome_url_overrides" : {
-        "newtab": "index.html"
-    }
+  "manifest_version": 2,
+  "name": "Another New Tab",
+  "version": "0.1",
+  "chrome_url_overrides" : {
+    "newtab": "index.html"
+  },
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+    ]
 }
