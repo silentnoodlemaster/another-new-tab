@@ -4,7 +4,7 @@ This extension shows the time, and you can change the colors.
 
 That's it.
 
-![screenshot](screen.png)
+![screenshot](screenshot.png)
 
 ## Installation
 
