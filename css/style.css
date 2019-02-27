@@ -1,8 +1,21 @@
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('../font/RobotoMono-Regular.ttf');
+}
+
 body {
-    background-color: #333;
+    background-color: #000;
     color: #eee;
 }
 
 #time {
+    font-size: 15rem;
     text-align: center;
+    font-family: 'Roboto Mono';
+}
+
+@media only screen and (max-width: 768px) {
+    #time {
+        font-size: 8rem;
+    }
 }
