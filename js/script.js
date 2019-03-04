@@ -19,10 +19,13 @@ function time() {
   var m = today.getMinutes();
   h = checkTime(h);
   m = checkTime(m);
-  document.getElementById('time').innerHTML =
-  h + ':' + m ;
+  hm = h + ':' + m;
+  var _time = document.getElementById('time');
+  if(_time.innerText != hm )
+    _time.innerHTML = hm;
   var t = setTimeout(time, 500);
 }
+
 function checkTime(i) {
   if (i < 10) {i = '0' + i;}
   return i;
