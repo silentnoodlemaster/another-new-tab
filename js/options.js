@@ -12,10 +12,21 @@ function update() {
   });
 }
 
+function reset() {
+  background.value = defaultBackground;
+  text.value = defaultText;
+  var status = document.getElementById('status');
+    status.textContent = 'Remember to click save.';
+    setTimeout(function() {
+      status.textContent = '';
+    }, 750);
+}
+
 function startup() {
   background = document.getElementById("background");
   text = document.getElementById("text");
   save = document.getElementById("save");
+  loadDefault = document.getElementById("reset");
   chrome.storage.sync.get({
     background: defaultBackground,
     text: defaultText
@@ -23,8 +34,9 @@ function startup() {
     background.value = items.background;
     text.value = items.text;
     save.addEventListener("click", update);
+    loadDefault.addEventListener("click", reset);
   });
 }
-var defaultText = "#eee";
-var defaultBackground = "#333";
+var defaultText = "#eeeeee";
+var defaultBackground = "#333333";
 document.addEventListener("DOMContentLoaded", startup, false);
