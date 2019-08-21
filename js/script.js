@@ -2,14 +2,17 @@ document.addEventListener('DOMContentLoaded', start);
 
 function start() {
   time();
-  var defaultText = '#eee';
-  var defaultBackground = '#333';
+  var defaultText = '#eeeeee';
+  var defaultBackground = '#333333';
+  var defaultFont = 'sans-serif';
   chrome.storage.sync.get({
     background: defaultBackground,
-    text: defaultText
+    text: defaultText,
+    font: defaultFont
   }, function(items) {
     document.querySelector('body').style.color=items.text;
     document.querySelector('body').style.backgroundColor = items.background;
+    document.querySelector('body').style.fontFamily = items.font;
   });
 }
 
