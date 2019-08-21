@@ -11,17 +11,18 @@ function update() {
     }, 750);
   });
 }
+
 function startup() {
-  background = document.querySelector("#background");
-  text = document.querySelector("#text");
+  background = document.getElementById("background");
+  text = document.getElementById("text");
+  save = document.getElementById("save");
   chrome.storage.sync.get({
     background: defaultBackground,
     text: defaultText
   }, function(items) {
     background.value = items.background;
     text.value = items.text;
-    background.addEventListener("change", update);
-    text.addEventListener("change", update);
+    save.addEventListener("click", update);
   });
 }
 var defaultText = "#eee";
