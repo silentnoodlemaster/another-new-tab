@@ -8,9 +8,11 @@ That's it.
 
 ## Installation
 
-Load this extension unpacked.
+To download from the chrome webstore, join the [google group](https://groups.google.com/forum/#!forum/another-new-tab-testers/join)
 
-### Detailed instructions
+alternatively, Load this extension unpacked.
+
+### How to install manually
 1. Download this repo
 
 1. Go to `chrome://extensions`
