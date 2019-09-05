@@ -1,6 +1,6 @@
 # Another new tab
 
-This extension shows the time, and you can change the colors.
+This extension shows the time, and you can change the colors and font.
 
 That's it.
 
