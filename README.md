@@ -8,7 +8,8 @@ That's it.
 
 ## Installation
 
-To download from the chrome webstore, join the [google group](https://groups.google.com/forum/#!forum/another-new-tab-testers/join)
+To download from the chrome webstore, join the [google group](https://groups.google.com/forum/#!forum/another-new-tab-testers/join).
+Once you're in the group you can install the [extension](https://chrome.google.com/webstore/detail/another-new-tab/hfdkaflgieogggbkghelhoiagoklcnob)
 
 alternatively, Load this extension unpacked.
 
