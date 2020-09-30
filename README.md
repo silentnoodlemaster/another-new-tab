@@ -6,22 +6,11 @@ That's it.
 
 ![screenshot](screenshot.png)
 
-## Installation
+## Download
 
-To download from the chrome webstore, join the [google group](https://groups.google.com/forum/#!forum/another-new-tab-testers/join).
-Once you're in the group you can install the [extension](https://chrome.google.com/webstore/detail/another-new-tab/hfdkaflgieogggbkghelhoiagoklcnob)
+[For Chrome](https://chrome.google.com/webstore/detail/another-new-tab/hfdkaflgieogggbkghelhoiagoklcnob)
 
-alternatively, Load this extension unpacked.
+[For Firefox](https://addons.mozilla.org/en-US/firefox/addon/another-new-tab/)
 
-### How to install manually
-1. Download this repo
-
-1. Go to `chrome://extensions`
-
-1. Endable developer mode
-
-    ![step 1](instructions/1.png)
-
-1. Load unpacked and open the folder
-
-    ![step 2](instructions/2.png)
+---
+you can also get the source and it will work as is.
