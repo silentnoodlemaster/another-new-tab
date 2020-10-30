@@ -16,5 +16,5 @@ jobs:
           npm run publish-webstore
     env:
       WEBSTORE_CLIENT_ID: ${{ secrets.WEBSTORE_CLIENT_ID }}
-      WEBSTORE_CLIENT_SECRET: ${{ secrets.WEBSTORE_CLIENT_ID }}
+      WEBSTORE_CLIENT_SECRET: ${{ secrets.WEBSTORE_CLIENT_SECRET }}
       WEBSTORE_REFRESH_TOKEN: ${{ secrets.WEBSTORE_REFRESH_TOKEN }}
