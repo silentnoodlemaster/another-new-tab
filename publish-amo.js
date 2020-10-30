@@ -2,7 +2,7 @@ var jwt = require('jsonwebtoken');
 var axios = require('axios');
 var FormData = require('form-data');
 var fs = require('fs');
-var {version} = require('./manifest.json');s
+var {version} = require('./manifest.json');
 
 var issuedAt = Math.floor(Date.now() / 1000);
 var payload = {
