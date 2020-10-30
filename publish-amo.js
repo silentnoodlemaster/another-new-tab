@@ -1,19 +1,19 @@
-var jwt = require('jsonwebtoken');
-var axios = require('axios');
-var FormData = require('form-data');
-var fs = require('fs');
-var {version} = require('./manifest.json');
+const jwt = require('jsonwebtoken');
+const axios = require('axios');
+const FormData = require('form-data');
+const fs = require('fs');
+const {version} = require('./manifest.json');
 
-var issuedAt = Math.floor(Date.now() / 1000);
-var payload = {
+const issuedAt = Math.floor(Date.now() / 1000);
+const payload = {
     iss: process.env.AMO_JWT_ISS,
     jti: Math.random().toString(),
     iat: issuedAt,
     exp: issuedAt + 60,
 };
 
-var secret = process.env.AMO_JWT_SECRET;
-var token = jwt.sign(payload, secret, {
+const secret = process.env.AMO_JWT_SECRET;
+const token = jwt.sign(payload, secret, {
     algorithm: 'HS256',
 });
 
