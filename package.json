@@ -11,8 +11,8 @@
     "type": "git",
     "url": "git+https://github.com/silentnoodlemaster/another-new-tab.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "silentnoodlemaster",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/silentnoodlemaster/another-new-tab/issues"
   },
