@@ -1,6 +1,6 @@
 {
   "name": "another-new-tab",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This extension shows the time, and you can change the colors and font.",
   "scripts": {
     "build": "web-ext build",
