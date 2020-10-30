@@ -12,5 +12,5 @@ jobs:
           npm run build
           npm run publish-amo
     env:
-      AMO_JWT_ISS: ${{ secret.AMO_JWT_ISS }}
-      AMO_JWT_SECRET: ${{ secret.AMO_JWT_SECRET }}
+      AMO_JWT_ISS: ${{ secrets.AMO_JWT_ISS }}
+      AMO_JWT_SECRET: ${{ secrets.AMO_JWT_SECRET }}
