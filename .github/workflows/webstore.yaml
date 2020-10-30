@@ -6,11 +6,12 @@ jobs:
   publish:
     runs-on:  ubuntu-latest
     steps:
-      - run: npm install
-      - run: npm run build
-      - run: npm run publish-webstore
+      - name: publish release
+        run: |
+          npm install
+          npm run build
+          npm run publish-webstore
     env:
       WEBSTORE_CLIENT_ID: ${{ secret.WEBSTORE_CLIENT_ID }}
       WEBSTORE_CLIENT_SECRET: ${{ secret.WEBSTORE_CLIENT_ID }}
       WEBSTORE_REFRESH_TOKEN: ${{ secret.WEBSTORE_REFRESH_TOKEN }}
-
