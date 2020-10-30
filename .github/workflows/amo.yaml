@@ -6,7 +6,6 @@ jobs:
   publish:
     runs-on:  ubuntu-latest
     steps:
-      - name: Create webstore release
       - run: npm install
       - run: npm run build
       - run: npm run publish-amo
