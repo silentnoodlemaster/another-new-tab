@@ -1,0 +1,16 @@
+on:
+  release:
+    types:  [published]
+
+jobs:
+  publish:
+    runs-on:  ubuntu-latest
+    steps:
+      - name: publish release
+        run: |
+          npm install
+          npm run build
+          npm run publish-amo
+    env:
+      AMO_JWT_ISS: ${{ secret.AMO_JWT_ISS }}
+      AMO_JWT_SECRET: ${{ secret.AMO_JWT_SECRET }}
