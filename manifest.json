@@ -2,9 +2,12 @@
 {
   "manifest_version": 2,
   "name": "Another New Tab",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "chrome_url_overrides" : {
     "newtab": "index.html"
+  },
+  "chrome_settings_overrides": {
+    "homepage": "index.html"
   },
   "options_ui": {
    "page" : "options.html"
@@ -13,7 +16,7 @@
     "gecko": {
       "id": "ant@silentnoodlemaster.fi"
     }
-  },  
+  },
   "permissions": [
     "storage"
     ]
