@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/silentnoodlemaster/another-new-tab#readme",
   "dependencies": {
-    "axios": "^0.21.0",
+    "axios": "^0.21.1",
     "chrome-webstore-upload": "^0.4.2",
     "form-data": "^3.0.0",
     "jsonwebtoken": "^8.5.1",
