@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
-const axios = require('axios');
 const FormData = require('form-data');
+const fetch = require('node-fetch');
 const fs = require('fs');
 const {version} = require('./manifest.json');
 
@@ -24,12 +24,14 @@ form.append('upload', stream);
 
 const formHeaders = form.getHeaders();
 
-axios.put(`https://addons.mozilla.org/api/v4/addons/ant@silentnoodlemaster.fi/versions/${version}/`, form, {
+fetch(`https://addons.mozilla.org/api/v4/addons/ant@silentnoodlemaster.fi/versions/${version}/`, {
+    method: 'PUT',
     headers: {
-        "Authorization": `JWT ${token}`,
-        ...formHeaders
+        'Authorization': `JWT ${token}`,
+        'Content-type': 'multipart/form-data',
+        ...formHeaders,
     },
+    body: form
 })
 .then(response => console.log(response))
 .catch(error => console.error(error))
-
