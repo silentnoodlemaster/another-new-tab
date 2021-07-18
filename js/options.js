@@ -28,11 +28,26 @@ function previewFont() {
   document.getElementById("font-preview").style.fontFamily=font.value;
 }
 
+function createIndexRef() {
+  var indexRef = document.getElementById("index-ref");
+  indexRef.innerHTML = chrome.runtime.getURL('/index.html');
+}
+
+function copyRefToClipboard() {
+  var indexRef = document.getElementById("index-ref");
+  navigator.clipboard.writeText(indexRef.innerHTML).catch(function(error) {
+    console.error(error)
+  });
+}
+
 function startup() {
   background = document.getElementById("background");
   text = document.getElementById("text");
   font = document.getElementById("font");
   save = document.getElementById("save");
+  copy = document.getElementById("copy");
+  createIndexRef();
+  copy.addEventListener("click", copyRefToClipboard);
   loadDefault = document.getElementById("reset");
   font.addEventListener("input", previewFont);
   chrome.storage.sync.get({
