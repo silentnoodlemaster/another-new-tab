@@ -24,14 +24,15 @@ form.append('upload', stream);
 
 const formHeaders = form.getHeaders();
 
-fetch(`https://addons.mozilla.org/api/v4/addons/ant@silentnoodlemaster.fi/versions/${version}/`, {
+fetch(`https://addons.mozilla.org/api/v5/addons/ant@silentnoodlemaster.fi/versions/${version}/`, {
     method: 'PUT',
     headers: {
         'Authorization': `JWT ${token}`,
-        'Content-type': 'multipart/form-data',
         ...formHeaders,
     },
     body: form
 })
-.then(response => console.log(response))
+.then(response => response.json().then( (json) => {
+        console.log(JSON.stringify(json, null, 2));
+    }))
 .catch(error => console.error(error))
