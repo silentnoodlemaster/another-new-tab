@@ -22,7 +22,7 @@
   "dependencies": {
     "chrome-webstore-upload": "^0.4.4",
     "form-data": "^4.0.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "node-fetch": "^2.6.7",
     "web-ext": "^6.2.0"
   },
